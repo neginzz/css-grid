@@ -14,11 +14,24 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
   </div>
 
   <style>
     .container {
       display: grid;
+      /*i've explicitly defined what the columns will be*/
+      grid-template-columns: 200px 400px;
+      /* implicit : and i have not defined what rows will be ...
+      so 2 rows implictly created 
+      till this line*/
+      gap: 20px;
+      grid-template-rows: 50px 100px;
+      /*for rows implictly created: 5-6-7-8*/
+      grid-auto-rows: 100px 500px;
     }
   </style>
 </body>
