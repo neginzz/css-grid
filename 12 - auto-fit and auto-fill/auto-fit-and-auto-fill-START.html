@@ -37,6 +37,17 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+      /*this will just give us 5 
+      U don't really know how many they will fit
+      because the contetns of these items could be 
+      bigger or smaller so we can use auto fill and auto fit*/
+      /* grid-template-columns: repeat(5,100px); */
+      /*auto fill just figure it ou the number of column*/
+      grid-template-columns: repeat(auto-fit, 150px);
+
+      /* auto-fit: when the items is not much like just 4 items the last line of grid will be the last item
+      auto-fill: but in here when you make the browser bigger it will add lines even we do not have any items to fill it*/
+
     }
   </style>
 </body>
