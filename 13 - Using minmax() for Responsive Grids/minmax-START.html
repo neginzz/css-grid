@@ -21,8 +21,13 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+            /*when we use auto-fill, auto-fit with minmax it's just responsive by neture*/
+
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      /*dont want to be more than 100px*/
+      /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
     }
+
   </style>
 </body>
 
