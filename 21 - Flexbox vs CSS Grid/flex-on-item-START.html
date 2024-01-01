@@ -22,6 +22,11 @@
   <style>
     .controls {
       margin: 200px 0;
+      /*wes prefer flex in this situation*/
+      /* display: flex; */
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, auto) 1fr repeat(2,auto);
     }
 
     .scrubber {
@@ -29,6 +34,7 @@
       height: 10px;
       min-width: 100px;
       border-radius: 10px;
+      /* flex: 1; */
     }
   </style>
 
